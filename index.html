@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PanchoManía | Panchos y Gaseosas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1>🌭 PanchoManía</h1>
+    <div class="links">
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div>
+      <p class="tag">EL SABOR QUE TE SALVA EL HAMBRE</p>
+      <h2>Los mejores panchos para compartir.</h2>
+      <p>PanchoManía ofrece panchos, papas, combos y gaseosas a precios accesibles, con mucho sabor y porciones abundantes.</p>
+      <a class="button" href="#catalogo">Ver catálogo</a>
+    </div>
+    <div class="hero-food">🌭🥤🍟</div>
+  </section>
+
+  <section class="section presentation">
+    <p class="tag">PRESENTACIÓN</p>
+    <h2>Un lugar simple, rico y para todos</h2>
+    <p>Somos un emprendimiento dedicado a preparar comida rápida con diferentes opciones para que cada persona pueda elegir su combinación favorita.</p>
+  </section>
+
+  <section id="historia" class="section history">
+    <div>
+      <p class="tag">NUESTRA HISTORIA</p>
+      <h2>De un pequeño emprendimiento a PanchoManía</h2>
+      <p>PanchoManía nació como un pequeño emprendimiento familiar con una idea sencilla: preparar panchos ricos, abundantes y a buen precio.</p>
+      <p>Con el tiempo fuimos sumando papas, combos y bebidas para ofrecer una experiencia completa. Nuestro objetivo sigue siendo el mismo: que cada cliente se vaya satisfecho y con ganas de volver.</p>
+    </div>
+    <div class="history-card">🌭<br><strong>Mucho sabor<br>desde el primer día</strong></div>
+  </section>
+
+  <section id="catalogo" class="section">
+    <p class="tag">CATÁLOGO</p>
+    <h2>Elegí tu favorito</h2>
+
+    <h3>🌭 Panchos</h3>
+    <div class="grid">
+      <article class="card"><span>🌭</span><h4>Pancho Clásico</h4><p>Pan, salchicha y salsas.</p><strong>$2.500</strong><button onclick="agregar('Pancho Clásico',2500)">Agregar</button></article>
+      <article class="card"><span>🌭</span><h4>Pancho Cheddar</h4><p>Cheddar y salsas especiales.</p><strong>$3.200</strong><button onclick="agregar('Pancho Cheddar',3200)">Agregar</button></article>
+      <article class="card"><span>🌭</span><h4>Pancho Completo</h4><p>Jamón, queso, tomate y salsas.</p><strong>$3.500</strong><button onclick="agregar('Pancho Completo',3500)">Agregar</button></article>
+      <article class="card"><span>🌭</span><h4>Bacon & Cheese</h4><p>Panceta, cheddar y salsas.</p><strong>$4.000</strong><button onclick="agregar('Bacon & Cheese',4000)">Agregar</button></article>
+    </div>
+
+    <h3>🍟 Comida</h3>
+    <div class="grid">
+      <article class="card"><span>🍟</span><h4>Papas Clásicas</h4><p>Porción de papas crocantes.</p><strong>$2.500</strong><button onclick="agregar('Papas Clásicas',2500)">Agregar</button></article>
+      <article class="card"><span>🧀</span><h4>Papas con Cheddar</h4><p>Papas con cheddar cremoso.</p><strong>$3.500</strong><button onclick="agregar('Papas con Cheddar',3500)">Agregar</button></article>
+      <article class="card"><span>🍗</span><h4>Nuggets</h4><p>Porción de nuggets crocantes.</p><strong>$3.000</strong><button onclick="agregar('Nuggets',3000)">Agregar</button></article>
+      <article class="card"><span>🔥</span><h4>Combo Clásico</h4><p>Pancho clásico + papas + gaseosa.</p><strong>$5.500</strong><button onclick="agregar('Combo Clásico',5500)">Agregar</button></article>
+    </div>
+
+    <h3>🥤 Gaseosas</h3>
+    <div class="grid">
+      <article class="card"><span>🥤</span><h4>Cola</h4><p>500 ml.</p><strong>$1.500</strong><button onclick="agregar('Gaseosa Cola',1500)">Agregar</button></article>
+      <article class="card"><span>🥤</span><h4>Lima Limón</h4><p>500 ml.</p><strong>$1.500</strong><button onclick="agregar('Gaseosa Lima Limón',1500)">Agregar</button></article>
+      <article class="card"><span>🥤</span><h4>Naranja</h4><p>500 ml.</p><strong>$1.500</strong><button onclick="agregar('Gaseosa Naranja',1500)">Agregar</button></article>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>🛒 Tu pedido</h2>
+    <ul id="carrito"><li>Tu carrito está vacío.</li></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button onclick="vaciar()">Vaciar carrito</button>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <p class="tag">CONTACTO</p>
+    <h2>¿Tenés hambre?</h2>
+    <p>Hacé tu pedido y disfrutá de PanchoManía.</p>
+    <p>📱 WhatsApp: 11 1234-5678</p>
+    <p>📍 Buenos Aires, Argentina</p>
+  </section>
+</main>
+
+<footer>© 2026 PanchoManía · Todos los derechos reservados</footer>
+<script src="script.js"></script>
+</body>
+</html>
